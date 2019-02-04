@@ -1,0 +1,10 @@
+.\main.o: main.c
+.\main.o: C:\Armkeil\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\main.o: C:\Armkeil\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\main.o: C:\Armkeil\ARM\CMSIS\Include\core_cm4.h
+.\main.o: C:\Armkeil\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: C:\Armkeil\ARM\CMSIS\Include\core_cmInstr.h
+.\main.o: C:\Armkeil\ARM\CMSIS\Include\core_cmFunc.h
+.\main.o: C:\Armkeil\ARM\CMSIS\Include\core_cm4_simd.h
+.\main.o: C:\Armkeil\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\main.o: C:\Armkeil\ARM\ARMCC\Bin\..\include\stdio.h

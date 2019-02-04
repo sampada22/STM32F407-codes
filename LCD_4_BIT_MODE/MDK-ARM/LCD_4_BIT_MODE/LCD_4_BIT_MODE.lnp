@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"lcd_4_bit_mode\system_stm32f4xx.o"
+"lcd_4_bit_mode\stm32f4xx_it.o"
+"lcd_4_bit_mode\stm32f4xx_hal_msp.o"
+"lcd_4_bit_mode\main.o"
+"lcd_4_bit_mode\stm_my_lcd16x2.o"
+"lcd_4_bit_mode\stm32f4xx_hal_tim_ex.o"
+"lcd_4_bit_mode\stm32f4xx_hal_pwr.o"
+"lcd_4_bit_mode\stm32f4xx_hal_gpio.o"
+"lcd_4_bit_mode\stm32f4xx_hal_flash.o"
+"lcd_4_bit_mode\stm32f4xx_hal_flash_ramfunc.o"
+"lcd_4_bit_mode\stm32f4xx_hal_cortex.o"
+"lcd_4_bit_mode\stm32f4xx_hal_dma.o"
+"lcd_4_bit_mode\stm32f4xx_hal_flash_ex.o"
+"lcd_4_bit_mode\stm32f4xx_hal_tim.o"
+"lcd_4_bit_mode\stm32f4xx_hal.o"
+"lcd_4_bit_mode\stm32f4xx_hal_rcc.o"
+"lcd_4_bit_mode\stm32f4xx_hal_dma_ex.o"
+"lcd_4_bit_mode\stm32f4xx_hal_pwr_ex.o"
+"lcd_4_bit_mode\stm32f4xx_hal_rcc_ex.o"
+"lcd_4_bit_mode\startup_stm32f407xx.o"
+--library_type=microlib --strict --scatter "LCD_4_BIT_MODE\LCD_4_BIT_MODE.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_4_BIT_MODE.map" -o LCD_4_BIT_MODE\LCD_4_BIT_MODE.axf

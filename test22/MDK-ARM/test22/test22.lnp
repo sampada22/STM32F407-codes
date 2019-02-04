@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"test22\startup_stm32f407xx.o"
+"test22\system_stm32f4xx.o"
+"test22\stm32f4xx_hal_pwr.o"
+"test22\stm32f4xx_hal_tim.o"
+"test22\stm32f4xx_hal_rcc.o"
+"test22\stm32f4xx_hal_pwr_ex.o"
+"test22\stm32f4xx_hal_dma.o"
+"test22\stm32f4xx_hal_cortex.o"
+"test22\stm32f4xx_hal_dma_ex.o"
+"test22\stm32f4xx_hal_gpio.o"
+"test22\stm32f4xx_hal_tim_ex.o"
+"test22\stm32f4xx_hal.o"
+"test22\stm32f4xx_hal_rcc_ex.o"
+"test22\stm32f4xx_hal_flash.o"
+"test22\stm32f4xx_hal_flash_ramfunc.o"
+"test22\stm32f4xx_hal_flash_ex.o"
+"test22\stm32f4xx_hal_msp.o"
+"test22\stm32f4xx_it.o"
+"test22\main.o"
+--library_type=microlib --strict --scatter "test22\test22.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test22.map" -o test22\test22.axf

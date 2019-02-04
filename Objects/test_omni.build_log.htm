@@ -1,0 +1,304 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ddf dfg, dfg, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Armkeil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+F:\arm_codes\test_omni.uvprojx
+Project File Date:  09/22/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Armkeil\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling motor.c...
+compiling drive.c...
+compiling encoder.c...
+test_omni\encoder.c(12): error:  #169: expected a declaration
+  					  
+_HAL_RCC_GPIOD_CLK_ENABLE()
+test_omni\encoder.c(24): warning:  #12-D: parsing restarts here after previous syntax error
+             };
+test_omni\encoder.c(25): warning:  #1-D: last line of file ends without a newline
+  	
+test_omni\encoder.c: 2 warnings, 1 error
+compiling main.c...
+test_omni\main.c(7): error:  #65: expected a ";"
+  	HAL_GPIO_Init(GPIOD,&encoder_config){
+test_omni\main.c(19): warning:  #1-D: last line of file ends without a newline
+  }
+test_omni\main.c(19): warning:  #12-D: parsing restarts here after previous syntax error
+  }
+test_omni\main.c(4): warning:  #177-D: variable "encoder_config"  was declared but never referenced
+  GPIO_InitTypeDef encoder_config;
+test_omni\main.c: 3 warnings, 1 error
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_adc_ex.c...
+compiling stm32f4xx_hal_adc.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dac.c...
+compiling stm32f4xx_hal_crc.c...
+compiling stm32f4xx_hal_dac_ex.c...
+compiling stm32f4xx_hal_dcmi_ex.c...
+compiling stm32f4xx_hal_dcmi.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_eth.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_hcd.c...
+compiling stm32f4xx_hal_i2s.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2s_ex.c...
+compiling stm32f4xx_hal_iwdg.c...
+compiling stm32f4xx_hal_irda.c...
+compiling stm32f4xx_hal_mmc.c...
+compiling stm32f4xx_hal_nor.c...
+compiling stm32f4xx_hal_nand.c...
+compiling stm32f4xx_hal_pccard.c...
+compiling stm32f4xx_hal_pcd.c...
+compiling stm32f4xx_hal_pcd_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rng.c...
+compiling stm32f4xx_hal_rtc.c...
+compiling stm32f4xx_hal_rtc_ex.c...
+compiling stm32f4xx_hal_smartcard.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_sd.c...
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_wwdg.c...
+compiling stm32f4xx_hal_usart.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_ll_sdmmc.c...
+compiling stm32f4xx_ll_usb.c...
+assembling startup_stm32f407xx.s...
+compiling system_stm32f4xx.c...
+".\Objects\test_omni.axf" - 2 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.2
+   * Component: WWDG Version: 1.7.4
+   * Component: USART Version: 1.7.4
+   * Component: UART Version: 1.7.4
+   * Component: TIM Version: 1.7.4
+   * Component: Smartcard Version: 1.7.4
+   * Component: SRAM Version: 1.7.4
+   * Component: SPI Version: 1.7.4
+   * Component: SD Version: 1.7.4
+   * Component: RTC Version: 1.7.4
+   * Component: RNG Version: 1.7.4
+   * Component: RCC Version: 1.7.4
+   * Component: PWR Version: 1.7.4
+   * Component: PCD Version: 1.7.4
+   * Component: PC Card Version: 1.7.4
+   * Component: NOR Version: 1.7.4
+   * Component: NAND Version: 1.7.4
+   * Component: MMC Version: 1.7.4
+   * Component: IWDG Version: 1.7.4
+   * Component: IRDA Version: 1.7.4
+   * Component: I2S Version: 1.7.4
+   * Component: I2C Version: 1.7.4
+   * Component: HCD Version: 1.7.4
+   * Component: GPIO Version: 1.7.4
+   * Component: Flash Version: 1.7.4
+   * Component: ETH Version: 1.7.4
+   * Component: DMA Version: 1.7.4
+   * Component: DCMI Version: 1.7.4
+   * Component: DAC Version: 1.7.4
+   * Component: Cortex Version: 1.7.4
+   * Component: Common Version: 1.7.4
+   * Component: CRC Version: 1.7.4
+   * Component: CAN Version: 1.7.4
+   * Component: ADC Version: 1.7.4
+   * Component: Classic Version: 1.7.4
+   * Component: STM32Cube Framework Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\_Target_1
+  C:\Armkeil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Armkeil\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Armkeil\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup:2.6.2
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Device:STM32Cube HAL:WWDG:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_wwdg.c
+
+   * Component: Keil::Device:STM32Cube HAL:USART:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c
+
+   * Component: Keil::Device:STM32Cube HAL:UART:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Smartcard:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_smartcard.c
+
+   * Component: Keil::Device:STM32Cube HAL:SRAM:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+
+   * Component: Keil::Device:STM32Cube HAL:SD:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:RTC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RNG:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:PCD:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c
+
+   * Component: Keil::Device:STM32Cube HAL:PC Card:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pccard.c
+
+   * Component: Keil::Device:STM32Cube HAL:NOR:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_nor.c
+
+   * Component: Keil::Device:STM32Cube HAL:NAND:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_nand.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:MMC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_mmc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:IWDG:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c
+
+   * Component: Keil::Device:STM32Cube HAL:IRDA:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_irda.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2S:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:HCD:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hcd.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
+
+   * Component: Keil::Device:STM32Cube HAL:ETH:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_eth.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+
+   * Component: Keil::Device:STM32Cube HAL:DCMI:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dcmi.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dcmi_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DAC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:CRC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c
+
+   * Component: Keil::Device:STM32Cube HAL:CAN:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
+
+   * Component: Keil::Device:STM32Cube HAL:ADC:1.7.4
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.7.4
+      Source file:   MDK\Templates\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+Target not created.
+Build Time Elapsed:  00:03:26
+</pre>
+</body>
+</html>

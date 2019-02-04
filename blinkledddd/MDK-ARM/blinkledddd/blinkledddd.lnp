@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"blinkledddd\stm32f4xx_hal_msp.o"
+"blinkledddd\main.o"
+"blinkledddd\stm32f4xx_it.o"
+"blinkledddd\startup_stm32f407xx.o"
+"blinkledddd\stm32f4xx_hal.o"
+"blinkledddd\stm32f4xx_hal_flash_ex.o"
+"blinkledddd\stm32f4xx_hal_pwr.o"
+"blinkledddd\stm32f4xx_hal_tim_ex.o"
+"blinkledddd\stm32f4xx_hal_flash_ramfunc.o"
+"blinkledddd\stm32f4xx_hal_gpio.o"
+"blinkledddd\stm32f4xx_hal_rcc_ex.o"
+"blinkledddd\stm32f4xx_hal_tim.o"
+"blinkledddd\stm32f4xx_hal_rcc.o"
+"blinkledddd\stm32f4xx_hal_flash.o"
+"blinkledddd\stm32f4xx_hal_dma_ex.o"
+"blinkledddd\stm32f4xx_hal_dma.o"
+"blinkledddd\stm32f4xx_hal_cortex.o"
+"blinkledddd\stm32f4xx_hal_pwr_ex.o"
+"blinkledddd\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "blinkledddd\blinkledddd.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "blinkledddd.map" -o blinkledddd\blinkledddd.axf
